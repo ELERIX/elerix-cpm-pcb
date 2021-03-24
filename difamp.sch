@@ -1,0 +1,638 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 24 28
+Title "ELERIX_CPM"
+Date "2021-03-23"
+Rev "r1.7"
+Comp "GWL a.s."
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Operational:OPA2196xD U2501
+U 1 1 6053F75B
+P 5050 5100
+F 0 "U2501" H 5350 5250 50  0000 C CNN
+F 1 "OPA2196xD" H 5275 5350 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5150 5100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/opa4196.pdf" H 5300 5250 50  0001 C CNN
+	1    5050 5100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:OPA2196xD U2501
+U 2 1 605401BA
+P 5000 2100
+F 0 "U2501" H 5300 2250 50  0000 C CNN
+F 1 "OPA2196xD" H 5850 1950 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5100 2100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/opa4196.pdf" H 5250 2250 50  0001 C CNN
+	2    5000 2100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:OPA2196xD U2501
+U 3 1 6054070F
+P 5100 2100
+F 0 "U2501" H 5350 1850 50  0000 L CNN
+F 1 "OPA2196xD" H 5200 1750 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5200 2100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/opa4196.pdf" H 5350 2250 50  0001 C CNN
+	3    5100 2100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 1700 5100 1800
+Wire Wire Line
+	5100 2500 5100 2400
+$Comp
+L Device:R_Small R2509
+U 1 1 60555931
+P 5400 2950
+F 0 "R2509" H 5050 3000 50  0000 L CNN
+F 1 "100k 0.1%" H 4900 2900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5400 2950 50  0001 C CNN
+F 3 "~" H 5400 2950 50  0001 C CNN
+	1    5400 2950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3050 5400 3150
+Wire Wire Line
+	5400 2000 5300 2000
+$Comp
+L Device:R_Small R2503
+U 1 1 60557295
+P 3950 1450
+F 0 "R2503" V 3754 1450 50  0000 C CNN
+F 1 "0R" V 3845 1450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3950 1450 50  0001 C CNN
+F 3 "~" H 3950 1450 50  0001 C CNN
+	1    3950 1450
+	0    -1   1    0   
+$EndComp
+Connection ~ 5400 2000
+$Comp
+L Device:C_Small C2503
+U 1 1 60558ABE
+P 4800 2750
+F 0 "C2503" V 4950 2750 50  0000 C CNN
+F 1 "100pF/25V X7R 5%" V 5050 2750 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4800 2750 50  0001 C CNN
+F 3 "~" H 4800 2750 50  0001 C CNN
+	1    4800 2750
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	4200 2750 4200 2100
+Wire Wire Line
+	4700 2100 4200 2100
+$Comp
+L Device:R_Small R2504
+U 1 1 60559CCB
+P 3950 2100
+F 0 "R2504" V 3754 2100 50  0000 C CNN
+F 1 "22R" V 3845 2100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3950 2100 50  0001 C CNN
+F 3 "~" H 3950 2100 50  0001 C CNN
+	1    3950 2100
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5400 1450 5400 2000
+Wire Wire Line
+	3700 1450 3700 2100
+Wire Wire Line
+	3700 2100 3850 2100
+$Comp
+L Device:C_Small C2502
+U 1 1 6055B361
+P 3250 2100
+F 0 "C2502" V 3400 2100 50  0000 C CNN
+F 1 "10uF/25V X7R 10%" V 3500 2100 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3250 2100 50  0001 C CNN
+F 3 "~" H 3250 2100 50  0001 C CNN
+	1    3250 2100
+	0    -1   1    0   
+$EndComp
+Connection ~ 3700 2100
+$Comp
+L Device:C_Small C2501
+U 1 1 6055C360
+P 3250 1450
+F 0 "C2501" V 3000 1450 50  0000 C CNN
+F 1 "100nF/25V X7R 10%" V 3100 1450 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3250 1450 50  0001 C CNN
+F 3 "~" H 3250 1450 50  0001 C CNN
+	1    3250 1450
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	2800 1450 2800 2100
+Wire Wire Line
+	3150 1450 2800 1450
+Wire Wire Line
+	3150 2100 2800 2100
+Connection ~ 2800 2100
+Wire Wire Line
+	2800 2100 2800 3150
+Wire Wire Line
+	5300 2200 6500 2200
+$Comp
+L Device:C_Small C2509
+U 1 1 60562407
+P 6950 3000
+F 0 "C2509" V 7100 3000 50  0000 C CNN
+F 1 "10uF/25V X7R 10%" V 7200 3000 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6950 3000 50  0001 C CNN
+F 3 "~" H 6950 3000 50  0001 C CNN
+	1    6950 3000
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:C_Small C2508
+U 1 1 60562E02
+P 6950 2600
+F 0 "C2508" V 7100 2600 50  0000 C CNN
+F 1 "100nF/25V 10%  X7R" V 7200 2600 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6950 2600 50  0001 C CNN
+F 3 "~" H 6950 2600 50  0001 C CNN
+	1    6950 2600
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6850 2600 6500 2600
+Wire Wire Line
+	6500 2600 6500 2800
+Wire Wire Line
+	6500 3000 6850 3000
+Wire Wire Line
+	7050 3000 7400 3000
+Wire Wire Line
+	7400 3000 7400 2800
+Wire Wire Line
+	7400 2600 7050 2600
+Wire Wire Line
+	6500 2600 6500 2200
+Connection ~ 6500 2600
+$Comp
+L Reference_Voltage:LM4040DBZ-4.1 U2502
+U 1 1 605689DC
+P 8850 2800
+F 0 "U2502" V 8896 2713 50  0000 R CNN
+F 1 "LM4040BIM3-4.1" V 8805 2713 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8850 2600 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm4040-n.pdf" H 8850 2800 50  0001 C CIN
+	1    8850 2800
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	8850 2950 8850 3150
+Wire Wire Line
+	8850 2650 8850 2200
+Wire Wire Line
+	8850 2200 6500 2200
+Connection ~ 6500 2200
+$Comp
+L Device:R_Small R2516
+U 1 1 6056BAA7
+P 8850 1800
+F 0 "R2516" H 8791 1754 50  0000 R CNN
+F 1 "270R" H 8791 1845 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 8850 1800 50  0001 C CNN
+F 3 "~" H 8850 1800 50  0001 C CNN
+	1    8850 1800
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8850 1900 8850 2200
+Connection ~ 8850 2200
+$Comp
+L Device:C_Small C2507
+U 1 1 6056D760
+P 6950 1800
+F 0 "C2507" V 7100 1800 50  0000 C CNN
+F 1 "10uF/25V X7R 10%" V 7200 1800 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6950 1800 50  0001 C CNN
+F 3 "~" H 6950 1800 50  0001 C CNN
+	1    6950 1800
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:C_Small C2506
+U 1 1 6056D912
+P 6950 1400
+F 0 "C2506" V 7100 1400 50  0000 C CNN
+F 1 "100nF/25V 10%  X7R" V 7200 1400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6950 1400 50  0001 C CNN
+F 3 "~" H 6950 1400 50  0001 C CNN
+	1    6950 1400
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6850 1400 6500 1400
+Wire Wire Line
+	6500 1400 6500 1600
+Wire Wire Line
+	6500 1800 6850 1800
+Wire Wire Line
+	7050 1800 7400 1800
+Wire Wire Line
+	7400 1800 7400 1600
+Wire Wire Line
+	7400 1400 7050 1400
+Wire Wire Line
+	7550 1600 7400 1600
+Connection ~ 7400 1600
+Wire Wire Line
+	7400 1600 7400 1400
+Wire Wire Line
+	7550 2800 7400 2800
+Connection ~ 7400 2800
+Wire Wire Line
+	7400 2800 7400 2600
+Wire Wire Line
+	6350 1600 6500 1600
+Connection ~ 6500 1600
+Wire Wire Line
+	6500 1600 6500 1800
+Text Label 6350 2800 2    50   ~ 0
+VREF1
+Wire Wire Line
+	6350 2800 6500 2800
+Connection ~ 6500 2800
+Wire Wire Line
+	6500 2800 6500 3000
+Wire Wire Line
+	3700 1450 3350 1450
+Wire Wire Line
+	3700 2100 3350 2100
+Wire Wire Line
+	3850 1450 3700 1450
+Connection ~ 3700 1450
+Wire Wire Line
+	5400 1450 4050 1450
+Wire Wire Line
+	5400 2000 5400 2750
+Wire Wire Line
+	4900 2750 5400 2750
+Connection ~ 5400 2750
+Wire Wire Line
+	5400 2750 5400 2850
+Wire Wire Line
+	4700 2750 4200 2750
+Wire Wire Line
+	4050 2100 4200 2100
+Connection ~ 4200 2100
+Text HLabel 3700 1150 1    50   Input ~ 0
+VREF2
+Wire Wire Line
+	3700 1150 3700 1450
+Wire Wire Line
+	5350 5000 5450 5000
+Wire Wire Line
+	5450 5000 5450 4450
+$Comp
+L Device:R_Small R2506
+U 1 1 60588FAA
+P 5050 4450
+F 0 "R2506" V 4854 4450 50  0000 C CNN
+F 1 "20k 0.1% 25PPM" V 4945 4450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5050 4450 50  0001 C CNN
+F 3 "~" H 5050 4450 50  0001 C CNN
+	1    5050 4450
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5150 4450 5450 4450
+$Comp
+L Device:R_Small R2505
+U 1 1 6058A538
+P 5050 4150
+F 0 "R2505" V 4854 4150 50  0000 C CNN
+F 1 "20k 0.1% 25PPM" V 4945 4150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5050 4150 50  0001 C CNN
+F 3 "~" H 5050 4150 50  0001 C CNN
+	1    5050 4150
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:C_Small C2504
+U 1 1 6058A95B
+P 5050 3850
+F 0 "C2504" V 4800 3850 50  0000 C CNN
+F 1 "47nF/50V X7R 10%" V 4900 3850 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5050 3850 50  0001 C CNN
+F 3 "~" H 5050 3850 50  0001 C CNN
+	1    5050 3850
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R_Small R2510
+U 1 1 6058D76E
+P 6250 3850
+F 0 "R2510" V 6054 3850 50  0000 C CNN
+F 1 "2k 0.1% 100mW 25PPM" V 6145 3850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 6250 3850 50  0001 C CNN
+F 3 "~" H 6250 3850 50  0001 C CNN
+	1    6250 3850
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5150 4150 5450 4150
+Wire Wire Line
+	5450 4150 5450 3850
+Connection ~ 5450 3850
+Wire Wire Line
+	5450 3850 5150 3850
+Wire Wire Line
+	5450 4150 5450 4450
+Connection ~ 5450 4150
+Connection ~ 5450 4450
+Wire Wire Line
+	4950 4150 4650 4150
+Wire Wire Line
+	4650 4150 4650 4000
+Wire Wire Line
+	4650 3850 4950 3850
+$Comp
+L Device:R_Small R2501
+U 1 1 60597367
+P 3850 4150
+F 0 "R2501" V 3654 4150 50  0000 C CNN
+F 1 "0R" V 3745 4150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3850 4150 50  0001 C CNN
+F 3 "~" H 3850 4150 50  0001 C CNN
+	1    3850 4150
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R_Small R2502
+U 1 1 6059862C
+P 3850 4450
+F 0 "R2502" V 3654 4450 50  0000 C CNN
+F 1 "0R" V 3745 4450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3850 4450 50  0001 C CNN
+F 3 "~" H 3850 4450 50  0001 C CNN
+	1    3850 4450
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	4350 4450 4950 4450
+Wire Wire Line
+	4350 4150 3950 4150
+Wire Wire Line
+	4350 4450 4350 4150
+Wire Wire Line
+	4350 4450 3950 4450
+Connection ~ 4350 4450
+Wire Wire Line
+	3750 4150 3450 4150
+Wire Wire Line
+	3750 4450 3450 4450
+Text Label 3450 4150 2    50   ~ 0
+VREF1
+Text Label 3450 4450 2    50   ~ 0
+VREF2
+Text Label 4500 4000 2    50   ~ 0
+AGND
+Wire Wire Line
+	4500 4000 4650 4000
+Connection ~ 4650 4000
+Wire Wire Line
+	4650 4000 4650 3850
+Text Label 2800 3150 2    50   ~ 0
+AGND
+Text Label 5400 3150 2    50   ~ 0
+AGND
+Text Label 7550 2800 0    50   ~ 0
+AGND
+Text Label 7550 1600 0    50   ~ 0
+AGND
+Wire Wire Line
+	6350 3850 6650 3850
+Text Label 6650 3850 0    50   ~ 0
+AGND
+Wire Wire Line
+	4750 5100 4350 5100
+Text HLabel 3450 5100 0    50   Output ~ 0
+VDIFF
+$Comp
+L Device:R_Small R2508
+U 1 1 605AFF2D
+P 5050 6050
+F 0 "R2508" V 4850 6050 50  0000 C CNN
+F 1 "20k 0.1% 25PPM" V 4950 6050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5050 6050 50  0001 C CNN
+F 3 "~" H 5050 6050 50  0001 C CNN
+	1    5050 6050
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5150 6050 5450 6050
+$Comp
+L Device:R_Small R2507
+U 1 1 605B0144
+P 5050 5750
+F 0 "R2507" V 4854 5750 50  0000 C CNN
+F 1 "20k 0.1% 25PPM" V 4945 5750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5050 5750 50  0001 C CNN
+F 3 "~" H 5050 5750 50  0001 C CNN
+	1    5050 5750
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5150 5750 5450 5750
+$Comp
+L Device:C_Small C2505
+U 1 1 605B8721
+P 5050 6350
+F 0 "C2505" V 4850 6350 50  0000 C CNN
+F 1 "47nF/50V X7R 10%" V 4950 6400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5050 6350 50  0001 C CNN
+F 3 "~" H 5050 6350 50  0001 C CNN
+	1    5050 6350
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5450 6350 5150 6350
+Wire Wire Line
+	4950 5750 4350 5750
+Wire Wire Line
+	4350 5750 4350 5100
+Connection ~ 4350 5100
+Wire Wire Line
+	4350 5100 3450 5100
+Wire Wire Line
+	4950 6050 4350 6050
+Wire Wire Line
+	4350 6050 4350 5750
+Connection ~ 4350 5750
+Wire Wire Line
+	4350 6350 4350 6050
+Connection ~ 4350 6050
+Wire Wire Line
+	4950 6350 4350 6350
+Wire Wire Line
+	5450 6350 5450 6050
+Wire Wire Line
+	5450 5750 5450 6050
+Connection ~ 5450 6050
+Wire Wire Line
+	5450 5750 5450 5200
+Wire Wire Line
+	5450 5200 5350 5200
+Connection ~ 5450 5750
+$Comp
+L Device:R_Small R2511
+U 1 1 605D0B4D
+P 6250 6350
+F 0 "R2511" V 6054 6350 50  0000 C CNN
+F 1 "2k 0.1% 100mW 25PPM" V 6145 6350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 6250 6350 50  0001 C CNN
+F 3 "~" H 6250 6350 50  0001 C CNN
+	1    6250 6350
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6350 6350 6650 6350
+Text Label 6650 6350 0    50   ~ 0
+AGND
+Wire Wire Line
+	6150 3850 5450 3850
+Wire Wire Line
+	6150 6350 5450 6350
+Connection ~ 5450 6350
+$Comp
+L Device:R_Small R2512
+U 1 1 605E5CDC
+P 6650 4450
+F 0 "R2512" V 6454 4450 50  0000 C CNN
+F 1 "10k 0.1% 125mW 25PPM" V 6545 4450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 6650 4450 50  0001 C CNN
+F 3 "~" H 6650 4450 50  0001 C CNN
+	1    6650 4450
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R_Small R2513
+U 1 1 605E6788
+P 6650 5750
+F 0 "R2513" V 6454 5750 50  0000 C CNN
+F 1 "10k 0.1% 125mW 25PPM" V 6545 5750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 6650 5750 50  0001 C CNN
+F 3 "~" H 6650 5750 50  0001 C CNN
+	1    6650 5750
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6550 5750 5450 5750
+Wire Wire Line
+	5450 4450 6550 4450
+$Comp
+L Device:C_Small C2510
+U 1 1 605EB7B0
+P 7450 5100
+F 0 "C2510" V 7200 5100 50  0000 C CNN
+F 1 "33nF/50V 10%  X7R" V 7300 5100 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7450 5100 50  0001 C CNN
+F 3 "~" H 7450 5100 50  0001 C CNN
+	1    7450 5100
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	7450 5000 7450 4450
+Wire Wire Line
+	7450 4450 6750 4450
+Wire Wire Line
+	7450 5200 7450 5750
+Wire Wire Line
+	7450 5750 6750 5750
+Wire Wire Line
+	8150 4450 7450 4450
+Connection ~ 7450 4450
+Wire Wire Line
+	8150 5750 7450 5750
+Connection ~ 7450 5750
+$Comp
+L Device:R_Small R2514
+U 1 1 605FD503
+P 8250 4450
+F 0 "R2514" V 8054 4450 50  0000 C CNN
+F 1 "15k 0.1% 250mW 25PPM" V 8145 4450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 8250 4450 50  0001 C CNN
+F 3 "~" H 8250 4450 50  0001 C CNN
+	1    8250 4450
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R_Small R2515
+U 1 1 605FD78D
+P 8250 5750
+F 0 "R2515" V 8054 5750 50  0000 C CNN
+F 1 "15k 0.1% 250mW 25PPM" V 8145 5750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 8250 5750 50  0001 C CNN
+F 3 "~" H 8250 5750 50  0001 C CNN
+	1    8250 5750
+	0    -1   1    0   
+$EndComp
+$Comp
+L Linear-local:D_UTVS D2501
+U 1 1 606013DE
+P 7450 4200
+F 0 "D2501" V 7379 4279 50  0000 L CNN
+F 1 "SMBJ28" V 7470 4279 50  0000 L CNN
+F 2 "Diode_SMD:D_SMB" H 7450 4200 50  0001 C CNN
+F 3 "https://en.wikipedia.org/wiki/Transient-voltage-suppression_diode" H 7450 4200 50  0001 C CNN
+	1    7450 4200
+	0    -1   1    0   
+$EndComp
+$Comp
+L Linear-local:D_UTVS D2502
+U 1 1 60601CCA
+P 7450 6000
+F 0 "D2502" V 7471 5921 50  0000 R CNN
+F 1 "SMBJ28" V 7380 5921 50  0000 R CNN
+F 2 "Diode_SMD:D_SMB" H 7450 6000 50  0001 C CNN
+F 3 "https://en.wikipedia.org/wiki/Transient-voltage-suppression_diode" H 7450 6000 50  0001 C CNN
+	1    7450 6000
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	7450 4300 7450 4450
+Wire Wire Line
+	7450 5750 7450 5900
+Text Label 7450 6350 0    50   ~ 0
+AGND
+Wire Wire Line
+	7450 6350 7450 6150
+Text Label 7450 3850 0    50   ~ 0
+AGND
+Wire Wire Line
+	7450 3850 7450 4050
+Text HLabel 8850 5750 2    50   Input ~ 0
+VDIFN
+Wire Wire Line
+	8850 4450 8350 4450
+Wire Wire Line
+	8350 5750 8850 5750
+Text HLabel 8850 4450 2    50   Input ~ 0
+VDIFP
+Text Label 6350 1600 2    50   ~ 0
+AVCC
+Text Label 5100 2500 0    50   ~ 0
+AGND
+Text Label 5100 1700 0    50   ~ 0
+AVCC
+Text HLabel 8850 1150 1    50   Input ~ 0
+AVCC
+Wire Wire Line
+	8850 1150 8850 1700
+Text HLabel 8850 3150 3    50   Input ~ 0
+AGND
+$EndSCHEMATC
